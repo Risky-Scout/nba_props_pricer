@@ -1,0 +1,32 @@
+# Fair vs Market Probability (and Odds)
+
+## Definitions
+- **Fair probability**: unbiased model chance for each outcome (e.g., Over, Under). For a two-way market:  
+  \(p^\text{fair}_\text{Over} + p^\text{fair}_\text{Under} = 1.\)
+- **Hold / Overround** \(m\): bookmaker margin (e.g., 0.025 = 2.5%).
+
+## Symmetric margin in probability space
+Apply margin equally to both sides:
+\[
+p^\text{mkt}_i = p^\text{fair}_i\,(1+m).
+\]
+Two-way markets then sum to \(1+m\).
+
+> Why do this? It’s simple, auditable, and keeps interpretability at the probability level.
+
+## Convert to odds
+- **Decimal**: \(d_i = \frac{1}{p^\text{mkt}_i}\)
+- **American**:
+  - If \(d \ge 2\): \(A = +100(d-1)\)
+  - Else: \(A = -\frac{100}{d-1}\)
+
+## Example (2.5% hold)
+Fair: Over = 0.52, Under = 0.48  
+Market: Over = 0.52·1.025 = **0.533**, Under = 0.48·1.025 = **0.492** (sum = 1.025)  
+Decimal: Over = 1/0.533 = **1.876**, Under = 1/0.492 = **2.033**  
+American: Over ≈ **-114**, Under ≈ **+103**
+
+## Notes
+- If you need “vig-free” probabilities from market odds, divide each side by the sum:  
+  \(p^\text{fair}_i \approx \frac{p^\text{mkt}_i}{\sum_j p^\text{mkt}_j}\).
+- Asymmetric margins (e.g., shading) are possible; document any deviations explicitly.
