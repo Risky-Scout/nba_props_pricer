@@ -1,0 +1,3 @@
+player,team,opponent,rpg,mpg,minutes_low,minutes_mid,minutes_high,team_pace,opp_pace,league_pace,team_fg_pct,opp_fg_pct_allowed,league_fg_pct,team_ft_pct,opp_ft_pct_allowed,league_ft_pct,team_ftr,opp_ftr,league_ftr,gamma_reb_ft,k_dispersion,hold_margin,lineup_factor,lines_to_price,team_trb_pct,opp_trb_pct_allowed,others_trb_share_sum,repl_trb_pct
+Austin Reaves,LAL,GSW,4.5,34.9,31,35,37,97.58,98.67,98.5,0.479,0.456,0.475,0.785,0.767,0.785,0.2713,0.2445,0.26,0.0,7.0,0.025,1.0,3.5;4.5;5.5,,,,
+Rui Hachimura,LAL,GSW,5.0,31.7,28,32,35,97.58,98.67,98.5,0.479,0.456,0.475,0.785,0.767,0.785,0.2713,0.2445,0.26,0.0,9.0,0.025,1.05,4.5;5.5;6.5,,,,
